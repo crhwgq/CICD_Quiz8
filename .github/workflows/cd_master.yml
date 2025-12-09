@@ -1,9 +1,10 @@
-name: CI
+name: CD
 
 on:
   push:
     branches: [ master ]
-  pull_request:
+    rules:
+      - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 
 jobs:
   run-tests:
