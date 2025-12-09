@@ -54,6 +54,8 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
     steps:
       - name: deploy the artifacts
         uses: actions/deploy-pages@v4
