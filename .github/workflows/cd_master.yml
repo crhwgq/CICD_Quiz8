@@ -44,7 +44,7 @@ jobs:
           mv coverage.xml sites/
 
       - name: upload the artifacts
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./sites
 
@@ -58,6 +58,4 @@ jobs:
       name: github-pages
     steps:
       - name: deploy the artifacts
-        uses: actions/deploy-pages
-
-  
+        uses: actions/deploy-pages@v4
