@@ -58,4 +58,4 @@ jobs:
       name: github-pages
     steps:
       - name: deploy the artifacts
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages-artifact@v4
